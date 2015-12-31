@@ -1,3 +1,3 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
+$.getJSON("data/resume_data.json", function(json) {
+	console.log("data: " + json.bio.name);
+});
