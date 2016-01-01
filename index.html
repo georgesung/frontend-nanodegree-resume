@@ -52,8 +52,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 </head>
 <body>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
-
     <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
@@ -88,6 +86,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
+  <!-- We cannot read JSON files from local filesystem (security protection from browser),
+  so we have to load our JSON data as plain javascript -->
+  <script src="js/resume_data.js"></script>
   <script src="js/resumeBuilder.js"></script>
 
 
