@@ -1,11 +1,12 @@
 ﻿
-var bio = {  //'bio': {
+var bio = {
 	'name': 'Jou-ching (George) Sung',
 	'role': 'Machine learning and artificial intelligence expert in training',
 	'contacts': {
 		'mobile': '123-456-7890',
 		'email': 'placeholder@email.com',
 		'github': 'https://github.com/georgesung/',
+		'twitter': "@idonthavetwitter",
 		'location': 'Boston, MA'
 	},
 	'welcomeMessage': '\'In great attempts it is glorious even to fail.\' -Bruce Lee',
@@ -20,6 +21,7 @@ var bio = {  //'bio': {
 		$('#topContacts').append(HTMLmobile.replace('%data%', this.contacts.mobile));
 		$('#topContacts').append(HTMLemail.replace('%data%', this.contacts.email));
 		$('#topContacts').append(HTMLgithub.replace('%data%', this.contacts.github));
+		$('#topContacts').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
 		$('#topContacts').append(HTMLlocation.replace('%data%', this.contacts.location));
 
 		// Add my photo, welcome message, skills
@@ -32,7 +34,7 @@ var bio = {  //'bio': {
 	}
 };
 
-var education = {  //'education': {
+var education = {
 	'schools': [
 		{
 			'name': 'University of Michigan',
@@ -96,7 +98,7 @@ var education = {  //'education': {
 	}
 };
 
-var work = {  //'work': {
+var work = {
 	'jobs': [
 		{
 			'employer': 'Advanced Micro Devices (AMD)',
@@ -130,7 +132,7 @@ var work = {  //'work': {
 	}
 };
 
-var projects = {  //'projects': {
+var projects = {
 	'projects': [
 		{
 			'title': 'Placeholder Project 1',
