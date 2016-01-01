@@ -4,10 +4,10 @@
 /*
 Build each section of the html file to display, and display accordingly
 */
-resume_data.bio.display();
-resume_data.work.display();
-resume_data.projects.display();
-resume_data.education.display();
+bio.display();
+work.display();
+projects.display();
+education.display();
 /*
 Modify the style from default
 */

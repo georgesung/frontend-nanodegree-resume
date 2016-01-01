@@ -1,6 +1,5 @@
-var resume_data = {
-
-'bio': {
+﻿
+var bio = {  //'bio': {
 	'name': 'Jou-ching (George) Sung',
 	'role': 'Machine learning and artificial intelligence expert in training',
 	'contacts': {
@@ -31,9 +30,9 @@ var resume_data = {
 			$('#skills').append(HTMLskills.replace('%data%', this.skills[i]));
 		}
 	}
-},
+};
 
-'education': {
+var education = {  //'education': {
 	'schools': [
 		{
 			'name': 'University of Michigan',
@@ -95,9 +94,9 @@ var resume_data = {
 			$('#'+educationIdString).append(HTMLonlineURL.replace('%data%', this.onlineCourses[i].url));
 		}
 	}
-},
+};
 
-'work': {
+var work = {  //'work': {
 	'jobs': [
 		{
 			'employer': 'Advanced Micro Devices (AMD)',
@@ -129,9 +128,9 @@ var resume_data = {
 			$('#'+workIdString).append(HTMLworkDescription.replace('%data%', this.jobs[i].description));
 		}
 	}
-},
+};
 
-'projects': {
+var projects = {  //'projects': {
 	'projects': [
 		{
 			'title': 'Placeholder Project 1',
@@ -163,6 +162,4 @@ var resume_data = {
 			}
 		}
 	}
-}
-
-}
+};
