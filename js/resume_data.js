@@ -17,12 +17,19 @@ var bio = {
 		$('#header').prepend(HTMLheaderRole.replace('%data%', this.role));
 		$('#header').prepend(HTMLheaderName.replace('%data%', this.name));
 
-		// Populate contact information
+		// Populate contact information in header
 		$('#topContacts').append(HTMLmobile.replace('%data%', this.contacts.mobile));
 		$('#topContacts').append(HTMLemail.replace('%data%', this.contacts.email));
 		$('#topContacts').append(HTMLgithub.replace('%data%', this.contacts.github));
 		$('#topContacts').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
 		$('#topContacts').append(HTMLlocation.replace('%data%', this.contacts.location));
+
+		// Populate contact information in footer
+		$('#footerContacts').append(HTMLmobile.replace('%data%', this.contacts.mobile));
+		$('#footerContacts').append(HTMLemail.replace('%data%', this.contacts.email));
+		$('#footerContacts').append(HTMLgithub.replace('%data%', this.contacts.github));
+		$('#footerContacts').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
+		$('#footerContacts').append(HTMLlocation.replace('%data%', this.contacts.location));
 
 		// Add my photo, welcome message, skills
 		$('#header').append(HTMLbioPic.replace('%data%', this.biopic));
